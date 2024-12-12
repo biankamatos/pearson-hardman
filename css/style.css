@@ -2,73 +2,128 @@
     --main-color: #d92123;
     --primary-text-color: #fff;
     --secondary-text-color: #191919;
-    --secondary-color:#eff3f4;
-    --tertiary-color:#eff3f4;
-    --secondy-bg-color:#5c1011;
-     
+    --secondary-color: #868686;
+    --teriary-color:#eff3f4;
+    --secondary-bg-color: #5c1011;
 }
-
+ 
 * {
     font-family: "Lato";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+ 
 a {
-
-text-decoration: none;
-
+    text-decoration: none;
 }
-
+ 
 img {
-    width: 1005;
+    width: 100%;
 }
-
-/* id -*/
+/* ID */
 #header{
+    /* define a altura mínima */
     min-height: 90vh;
+    /*  para definir uma imagem de fundo */
     background-image: url("../images/main_banner4.png");
+    /* usada para controlar como uma imagem de fundo é dimensionada para cobrir o espaço disponível dentro de um elemento */
     background-size: cover;
-    background-position: center;
+    /*  usada para definir a posição da imagem de fundo no caso centro */
+    background-position: center ;
     color: var(--primary-text-color);
+    /* para definir o espaço abaixo */
     margin-bottom: 2rem;
-
 }
-
+ 
 #inner-header{
-    /* padrão linha */
+    /* padrão de linha */
     display: flex;
-    /* alinhamento é horizonta, eixo x */
+    /* alinhamento é horizontal. eixo x */
     justify-content: space-between;
     /* alinhamento vertical, eixo y */
     align-items: center;
-
 }
-
+ 
 #brand{
+    /* para definir a cor de fundo */
     background-color: var(--main-color);
+    /* para definir o preenchimento interno */
     padding: 1rem;
 }
-
-#navbar {
+ 
+#navbar{
+    /* padrão de linha */
     display: flex;
+    /* espaçamento entre lista */
     gap: 2rem;
+    /* tamanho da letra */
     text-transform: uppercase;
+    /* definir a margem à direita */
     margin-right: 2rem;
+   
 }
-
+ 
+/* link dentro do navbar, utilizando a para alterar somente os link dentro do navbar */
 #navbar a {
-    /* link dentro do nav */
-    color: var(--primary-text-color);
+    /* para colocar cor definida no inicio do css */
+    color: var(--primary-text-colorary-text-color);
+    /* para ficar negrito */
     font-weight: bold;
+    /* para definir espaço entre a lista (como preenchimento interno) */
     padding: 1rem;
 }
+ 
+.banner.active{
+    /* Banner ativo é mostrado */
+    opacity: 1;
+}
+ 
+.banner{
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+}
+ 
+.banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+     z-index: 2;
 
-.square{
+}
+
+.banner p{
+    font-size: 1.5rem;
+}
+.square {
     display: block;
     width: 150px;
     height: 150px;
     background-color: var(--main-color);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index:1
+ 
+}
 
+.dots{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 4rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color:var(--secondary-color)
+
+}
+
+.dot.active{
+    background-color: var(--secondary-bg-color);
 }
