@@ -134,7 +134,6 @@ i {
   font-weight: bold;
 }
 
-
 .image-container {
   flex: 1 1 300px;
   position: relative;
@@ -144,13 +143,13 @@ i {
   position: absolute;
 }
 
-.section-tittle {
+.section-title {
   color: var(--main-color);
   text-transform: uppercase;
 }
 
-.section-subtittle {
-  color: var(--secondary-color);
+.section-subtitle {
+  color: var(--secondary-text-color);
   font-size: 2rem;
 }
 
@@ -217,12 +216,10 @@ i {
   padding: 4rem 3rem;
 }
 
-#about-text .section-subtittle,
+#about-text .section-subtitle,
 #about-text .section-title {
   color: var(--primary-text-color);
-  
 }
-
 
 /* Sobre Nós */
 #about-text i {
@@ -283,3 +280,29 @@ i {
   text-transform: uppercase;
 }
 /* ********** */
+/* Depoimentos */
+#testimonial {
+  display: flex;
+  align-items: center;
+}
+
+#testimonial-information {
+  padding: 3rem;
+}
+
+.author img {
+  width: 100px;
+  height: 100px;
+}
+
+.author .author-name {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.author .author-job {
+  color: var(--secondary-text-color);
+}
