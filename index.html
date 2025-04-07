@@ -17,10 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
-    <script src="js/aula.js"></script>
-
-    />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <!-- Cabeçalho e Banner -->
@@ -34,7 +31,7 @@
           <a href="#team">Time</a>
           <a href="#contact">Contato</a>
         </nav>
-
+        <!-- menu mobile -->
         <!-- MENU MOBILE -->
         <i class="bi bi-list" id="menu"></i>
         <nav id="mobile-navbar">
@@ -57,11 +54,13 @@
       </div>
       <div class="banner">
         <span class="square"></span>
-
-
-    <h2>Advogados</h2>
-        <p>Melhores experts em direito do país</p>
-        
+        <h2>Conheça o nosso time </h2>
+        <p>Veja as especialidades dos nossos advogados, e entenda como eles podem lhe ajudar</p>
+      </div>
+      <div class="banner">
+        <span class="square"></span>
+        <h2>Os nossos resultados</h2>
+        <p>Confira as nossas métricas e conheça os resultados que já obtivemos</p>
       </div>
       <div class="dots">
         <div class="dot active"></div>
@@ -69,20 +68,6 @@
         <div class="dot"></div>
       </div>
     </header>
-
-    <div class="banner">
-      <span class="square"></span>            
-      <h2>Conheça nosso time</h2>
-      <p>Veja as especialidades dos nossos advogados, e entenda como eles podem lhe ajudar</p>
-  </div>
-
-  <div class="banner">
-    <span class="square"></span>            
-    <h2>Os nossos resultados </h2>
-    <p>Confira as nossas métricas e conheça os resultados que ja obtivemos</p>
-</div>
-
-
     <!-- Áreas de atuação -->
     <main id="expertise-areas" class="text-image-section">
       <div id="expertise-information" class="text-container">
@@ -142,15 +127,14 @@
         </div>
       </div>
     </main>
-
     <!-- Seção Sobre nós -->
     <section id="about">
       <div id="about-text">
-        <h3 class="section-title">Sobre nós</h3>
-        <p class="section-subtitle">
+        <p class="section-title">Sobre nós</p>
+        <h3 class="section-subtitle">
           Uma empresa que tem o foco no cliente, aconselhando da melhor forma e
           conseguindo os melhores resultados
-        </p>
+        </h3>
         <div class="about-description">
           <i class="bi bi-briefcase"></i>
           <div>
@@ -194,43 +178,39 @@
         </div>
       </div>
     </section>
-
     <!-- Depoimentos -->
     <section id="testimonial" class="text-image-section">
-      <!-- 1ª Esquerda -->
+      <!-- 1ª esquerda -->
       <div id="testimonial-information" class="text-container">
-        <div id="testimonial-information" class="text-container">
-          <h3 class="section-title">Depoimentos de clientes</h3>
-          <p class="section-subtitle">
-            A Pearson Hardman resolveu meu caso muito rápido, recomendo a todos.
-          </p>
-          <div class="author">
-            <div class="author-info">
-              <p class="author-name">Jhon Doe</p>
-              <p class="author-job">CEO da Empresa X</p>
-            </div>
-            <img src="images/author_1.jpg" alt="Jhon Doe" />
+        <h3 class="section-title">Depoimentos de clientes</h3>
+        <p class="section-subtitle">
+          A Pearson Hardman resolveu meu caso muito rápido, recomendo a todos.
+        </p>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Jhon Doe</p>
+            <p class="author-job">CEO da Empresa X</p>
           </div>
-          <p class="section-subtitle">
-            O melhor escritório que eu já contratei, conseguimos resolver um
-            caso que durava décadas.
-          </p>
-          <div class="author">
-            <div class="author-info">
-              <p class="author-name">Paul Clinton</p>
-              <p class="author-job">Gerente de Projetos</p>
-            </div>
-            <img src="images/author_2.jpg" alt="Paul Clinton" />
+          <img src="images/author_1.jpg" alt="Jhon Doe" />
+        </div>
+        <p class="section-subtitle">
+          O melhor escritório que eu já contratei, conseguimos resolver um caso
+          que durava décadas.
+        </p>
+        <div class="author">
+          <div class="author-info">
+            <p class="author-name">Paul Clinton</p>
+            <p class="author-job">Gerente de Projetos</p>
           </div>
+          <img src="images/author_2.jpg" alt="Paul Clinton" />
         </div>
       </div>
-      <!-- 2ª Direita -->
+      <!-- 2ª direita -->
       <div id="testimonial-image-container" class="image-container">
         <i class="bi bi-quote"></i>
-        <img src="imagens/court.jpg" alt="Advogado em um Tribunal" />
+        <img src="images/court.jpg" alt="Advogado em um tribunal" />
       </div>
     </section>
-
     <!-- Colaboradores -->
     <section id="team">
       <span class="square"></span>
@@ -241,27 +221,26 @@
       <div class="employees">
         <div class="employee">
           <img src="images/mike.jpg" alt="Mike Ross" />
-          <h3 class="employee-name">Mike Ross</h3>
+          <p class="employee-name">Mike Ross</p>
           <p class="employee-role">Advogado</p>
         </div>
         <div class="employee">
           <img src="images/harvey.png" alt="Harvey Specter" />
-          <h3 class="employee-name">Harvey Specter</h3>
+          <p class="employee-name">Harvey Specter</p>
           <p class="employee-role">Advogado Sênior</p>
         </div>
         <div class="employee">
           <img src="images/louis.jpg" alt="Louis Litt" />
-          <h3 class="employee-name">Louis Litt</h3>
+          <p class="employee-name">Louis Litt</p>
           <p class="employee-role">Advogado</p>
         </div>
         <div class="employee">
           <img src="images/jessica.jpg" alt="Jessica Pearson" />
-          <h3 class="employee-name">Jessica Pearson</h3>
+          <p class="employee-name">Jessica Pearson</p>
           <p class="employee-role">CEO</p>
         </div>
       </div>
     </section>
-
     <!-- Contato -->
     <section id="contact" class="text-image-section">
       <div id="contact-image-container" class="image-container">
@@ -285,7 +264,6 @@
         </form>
       </div>
     </section>
-
     <!-- Rodapé -->
     <footer id="footer">
       <div class="contact-info">
@@ -337,5 +315,4 @@
     </footer>
   </body>
 </html>
-
-<!-- Feito por Matheus Senna -->
+ 
